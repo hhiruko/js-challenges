@@ -7,7 +7,7 @@ let username = prompt("What is your username? ");
 
 const content = `your name is ${name}, you are ${age} years old, and your username is ${username}\n`;
 
-fs.appendFile('easy.log', content, err => {
+fs.appendFile('simple_io.log', content, err => {
   if (err) {
     console.error(err);
   } else {
