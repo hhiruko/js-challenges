@@ -111,7 +111,7 @@ class Event {
 }
 
 let loop = true;
-let events = new Event('intermediate.json');
+let events = new Event('calendar.json');
 while(loop){
     console.log(menu());
     let command = parseInt(prompt("Choose an option: "));
