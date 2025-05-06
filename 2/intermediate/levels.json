@@ -1,0 +1,94 @@
+{
+    "0": {
+      "name": "Undead Asylum Cell",
+      "description": "A damp, dark cell. There’s a hole in the ceiling and a rusty door to the north.",
+      "exits": {
+        "n": "1",
+        "u": "2"
+      },
+      "items": {
+        "Ragged Doll": "A strange doll lies quietly on the bed."
+      },
+      "npcs": {
+        "Oscar of Astora": {
+          "dialogue": {
+            "0": {
+              "message": "Here, take this key. You'll need it.",
+              "items": ["Cell Key"]
+            }
+          }
+        }
+      }
+    },
+    "1": {
+      "name": "Hallway",
+      "description": "A narrow hallway stretches east and west.",
+      "exits": {
+        "e": "3",
+        "w": "4",
+        "s": "0"
+      }
+    },
+    "2": {
+      "name": "Ceiling Ledge",
+      "description": "You climb through the hole. A ladder leads down, and there’s a door east.",
+      "exits": {
+        "d": "0",
+        "e": "5"
+      },
+      "items": {
+        "Torch": "A lit torch is mounted here."
+      }
+    },
+    "3": {
+      "name": "Armory",
+      "description": "Old weapons are scattered around.",
+      "exits": {
+        "w": "1"
+      },
+      "items": {
+        "Sword": "A basic longsword with a worn hilt."
+      }
+    },
+    "4": {
+      "name": "Mess Hall",
+      "description": "Dusty tables. A door leads south.",
+      "exits": {
+        "e": "1",
+        "s": "6"
+      },
+      "npcs": {
+        "Hollow Soldier": {
+          "dialogue": {
+            "0": {
+              "message": "... (He stares blankly.)"
+            }
+          }
+        }
+      }
+    },
+    "5": {
+      "name": "Watch Tower",
+      "description": "You see the sky. A door leads north.",
+      "exits": {
+        "w": "2",
+        "n": "6"
+      }
+    },
+    "6": {
+      "name": "Locked Gate",
+      "description": "A large gate blocks your path south.",
+      "exits": {
+        "n": "4",
+        "s": "7"
+      },
+      "used_items": {
+        "s": "Cell Key"
+      }
+    },
+    "7": {
+      "name": "Freedom",
+      "description": "The gate opens to the outside. You're free.",
+      "exits": {}
+    }
+  }
