@@ -1,5 +1,4 @@
 const prompt = require("prompt-sync")();
-const { match } = require("node:assert");
 const fs = require('node:fs');
 
 class Game {
