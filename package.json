@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chromedriver": "^136.0.2",
     "decimal.js": "^10.5.0",
-    "prompt-sync": "^4.2.0"
+    "prompt-sync": "^4.2.0",
+    "selenium-webdriver": "^4.32.0"
   }
 }
