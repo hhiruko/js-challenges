@@ -1,6 +1,3 @@
-import promptSync from 'prompt-sync';
-const prompt = promptSync();
-
 export const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
 export const isLeap = (Y) => {
@@ -28,6 +25,3 @@ export const dayOfTheWeek = (D, M, Y) => {
 
     return weekdays[((D + m + 5 * ((Y - 1) % 4) + 4 * ((Y - 1) % 100) + 6 * ((Y - 1) % 400)) % 7) - 1];
 };
-
-const date = prompt('Date: ').split('.').flatMap(e => parseInt(e));
-console.log(dayOfTheWeek(date[0], date[1], date[2]));
