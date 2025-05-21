@@ -15,7 +15,7 @@ const isLeap = (Y) => {
 }
 
 // Gauss Algorithm
-const dayOfTheWeek = (D, M, Y) => {
+export const dayOfTheWeek = (D, M, Y) => {
     const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thirsday', 'Friday', 'Saturday', 'Sunday'];
 
     const monthOffset = [
