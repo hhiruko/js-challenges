@@ -1,5 +1,7 @@
 const prompt = require('prompt-sync')();
 
+export const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thirsday', 'Friday', 'Saturday', 'Sunday'];
+
 export const isLeap = (Y) => {
     let leap = false;
     if(Y % 4 === 0){
@@ -16,8 +18,6 @@ export const isLeap = (Y) => {
 
 // Gauss Algorithm
 export const dayOfTheWeek = (D, M, Y) => {
-    const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thirsday', 'Friday', 'Saturday', 'Sunday'];
-
     const monthOffset = [
         [0, 3, 3, 6, 1, 4, 6, 2, 5, 0, 3, 5],
         [0, 3, 4, 0, 2, 5, 0, 3, 6, 1, 4, 6]
