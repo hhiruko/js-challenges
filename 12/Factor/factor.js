@@ -3,6 +3,10 @@ const prompt = require('prompt-sync')();
 const number = parseInt(prompt('Enter a number to factor: '));
 
 const factor = (number) => {
+    if(number < 1){
+        return number;
+    }
+
     const factorArray = [];
 
     const divide = (number, by) => {
