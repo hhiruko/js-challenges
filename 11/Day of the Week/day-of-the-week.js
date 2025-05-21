@@ -1,6 +1,6 @@
 const prompt = require('prompt-sync')();
 
-const isLeap = (Y) => {
+export const isLeap = (Y) => {
     let leap = false;
     if(Y % 4 === 0){
         leap = true;
