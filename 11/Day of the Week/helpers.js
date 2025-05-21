@@ -23,5 +23,5 @@ export const dayOfTheWeek = (D, M, Y) => {
 
     const m = monthOffset[isLeap(Y) ? 1 : 0][M - 1];
 
-    return weekdays[((D + m + 5 * ((Y - 1) % 4) + 4 * ((Y - 1) % 100) + 6 * ((Y - 1) % 400)) % 7) - 1];
+    return ((D + m + 5 * ((Y - 1) % 4) + 4 * ((Y - 1) % 100) + 6 * ((Y - 1) % 400)) % 7);
 };
