@@ -20,7 +20,7 @@ const sections = [
     'XII.   The Adventure of the Copper Beeches'
 ].map(v => v.toUpperCase().replaceAll(' ', ''));
 
-text = text.substring(text.indexOf(bookHeader) + bookHeader.length, text.indexOf(bookFooter)).replaceAll(' ', '');
+text = text.substring(text.indexOf(bookHeader) + bookHeader.length, text.indexOf(bookFooter));
 text = text.substring(text.indexOf(sections[0]));
 
 export const getText = () => {
