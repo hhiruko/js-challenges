@@ -1,7 +1,7 @@
 const Sherlock = require('../sherlock.mjs');
 
 let text = Sherlock.getText().replaceAll(' ', '');
-const sections = Sherlock.getSections();
+const sections = Sherlock.getSections().map(v => v.replaceAll(' ', ''));
 
 
 sections.forEach(section => {
